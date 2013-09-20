@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SyncUp</string>
+    <string-array name="site_names">
+        <item>Google</item>
+        <item>NewEgg</item>
+        <item>MicroCenter</item>
+        <item>KhanAcademy</item>
+    </string-array>
+    <string-array name="site_links">
+        <item>http://google.com</item>
+        <item>http://newegg.com</item>
+        <item>http://microcenter.com</item>
+        <item>http://khanacademy.org</item>
+    </string-array>
+</resources>
