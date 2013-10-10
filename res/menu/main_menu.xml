@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menuOption1"
+          android:icon="@android:drawable/ic_menu_share"
+          android:title="Option 1"
+          android:onClick="onOption1Clicked"
+          android:showAsAction="ifRoom"/>
+    <item android:id="@+id/menuOption2"
+          android:icon="@android:drawable/ic_menu_call"
+          android:title="Option 2"
+          android:onClick="onOption2Clicked"
+          android:showAsAction="ifRoom"/>
+    <item android:id="@+id/menuOption3"
+          android:icon="@android:drawable/ic_dialog_map"
+          android:title="Option 3"
+          android:onClick="onOption3Clicked"
+          android:showAsAction="ifRoom"/>
+    <item android:id="@+id/menuExit"
+          android:icon="@android:drawable/ic_lock_power_off"
+          android:title="Exit"
+          android:showAsAction="ifRoom"
+          android:onClick="onExitClicked"/>
+</menu>

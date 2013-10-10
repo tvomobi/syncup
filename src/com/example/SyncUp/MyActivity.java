@@ -1,10 +1,15 @@
 package com.example.SyncUp;
 
 import android.app.Activity;
+import android.app.ActionBar;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MyActivity extends Activity {
     private TextView textViewContactInfo;
@@ -25,6 +30,35 @@ public class MyActivity extends Activity {
         setContentView(R.layout.main);
 
         InitializeApp();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.main_menu, menu);
+
+        return true;
+    }
+
+    public void onOption1Clicked(MenuItem menuItem) {
+        showToast("Clicked Option 1");
+    }
+
+    public void onOption2Clicked(MenuItem menuItem) {
+        showToast("Clicked Option 2");
+    }
+
+    public void onOption3Clicked(MenuItem menuItem) {
+        showToast("Clicked Option 3");
+    }
+
+    public void onExitClicked(MenuItem menuItem) {
+        finish();
+    }
+
+    private void showToast(CharSequence message) {
+        Toast t = Toast.makeText(this, message, Toast.LENGTH_LONG);
+        t.show();
     }
 
     private void InitializeApp() {
